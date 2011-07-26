@@ -10,6 +10,10 @@ How to Use jQuery Expander
 
 All that it takes to use this plugin is a function call (on a jQuery object) with 4 (optional) options.
 
+For example, if you wanted to enable the plugin on all images with the class of "screenshot", you would do as follows:
+
+	$('.screenshot').expander();
+
 Plugin Options
 --------------
 
