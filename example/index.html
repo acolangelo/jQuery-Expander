@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Anthony Colangelo | jQuery Expander</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="js/jquery.1.5.min.js"></script>
+		<script src="js/jquery.expander.1.0.js"></script>
+		<script src="js/site.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>jQuery Expander</h1>
+			<h2>Crafted by <a href="http://www.acolangelo.com/" title="Anthony Colangelo | Web Design and Development">Anthony Colangelo</a></h2>
+		</header>
+		<section id="content">
+			<img src="images/acolangelo.jpg" alt="acolangelo.com Screenshot" />
+			<h1>Plugin Background</h1>
+			<p>The idea for jQuery Expander came about during development of my own site, <a href="http://www.acolangelo.com/" title="Anthony Colangelo | Web Design and Development">acolangelo.com</a>, when I needed a way to showcase screenshots of my work across the site. I didn&rsquo;t want a lightbox to pop up over the content, or &mdash; even worse &mdash; I didn&rsquo;t want the user to be taken to an entirely new page just for a screenshot.</p>
+			<p>I came up with this simple jQuery plugin that would allow small thumbnails to sit in the text, and then expand upon click. The text reflows beautifully around the image as it expands to its full size. I think this is a great way to handle images within text, allowing the images to have more context than before.</p>
+			<h1>How to Use jQuery Expander</h1>
+			<p>All that it takes to use this plugin is a function call (on a jQuery object) with 4 (optional) options.</p>
+			<h2>Plugin Options:</h2>
+			<dl>
+				<dt>smallWidth</dt>
+				<dd>The width of the image thumbnails (before expanding). Default is 300 pixels.</dd>
+				<dt>largeWidth</dt>
+				<dd>The width of the image at full size (expanded). Default is 800 pixels.</dd>
+				<dt>duration</dt>
+				<dd>The duration of the expanding and collapsing animation. Default is 500 (milliseconds).</dd>
+				<dt>easing</dt>
+				<dd>The easing function to use in the expanding and collapsing animation. Default is swing.</dd>
+			</dl>
+			<h2>Code Example</h2>
+			<pre>$('.screenshot').expander({
+	smallWidth: '400px',
+	largeWidth: '900px',
+	duration: 1000,
+	easing: 'linear'
+});
+			</pre>
+		</section><!-- END CONTENT -->
+		<footer>
+			<small>&copy; 2011 <a href="http://www.acolangelo.com/" title="Anthony Colangelo | Web Design and Development">Anthony Colangelo</a></small>
+		</footer>
+	</body>
+</html>
